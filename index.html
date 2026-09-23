@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Electrónicos Tenerife | Soluciones y Reparación Arcade</title>
+    <!-- Cargamos Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pcb: '#006400', 
+                        dark: '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 font-bold text-xl md:text-2xl tracking-tighter">
+                    <span class="text-green-500">&lt;/&gt;</span> Proyectos Electrónicos <span class="text-green-500">Tenerife</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="hover:text-green-400 transition-colors px-3 py-2 rounded-md font-medium">Inicio</a>
+                        <a href="#servicios" class="hover:text-green-400 transition-colors px-3 py-2 rounded-md font-medium">Servicios</a>
+                        <a href="#proyectos" class="hover:text-green-400 transition-colors px-3 py-2 rounded-md font-medium">Proyectos</a>
+                        <a href="https://www.facebook.com/proyectoselectronicostenerife" target="_blank" class="flex items-center text-blue-500 hover:text-blue-400 transition-colors px-3 py-2">
+                            <svg class="w-6 h-6 mr-1" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                            Síguenos
+                        </a>
+                        <a href="#contacto" class="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-md font-bold transition-all">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN HERO (INICIO) -->
+    <section id="inicio" class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Ingeniería a medida y <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Reparación Arcade</span>
+                </h1>
+                <p class="text-lg text-gray-400 mb-8 max-w-lg">
+                    Ubicados en Santa Cruz de Tenerife. Diseñamos soluciones electrónicas personalizadas, PCBs y reparamos placas de máquinas recreativas y sistemas industriales.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contacto" class="bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-8 rounded-lg transition-all shadow-lg shadow-green-900/50">
+                        Solicitar Presupuesto
+                    </a>
+                </div>
+            </div>
+            
+            <!-- IMAGEN PRINCIPAL (Puedes cambiar "foto-principal.jpg" por la tuya) -->
+            <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-gray-800">
+                <img src="2_imagen.jpg" alt="Mesa de trabajo" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-green-900/20 mix-blend-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Nuestros Servicios</h2>
+            <div class="w-20 h-1 bg-green-500 mx-auto rounded-full mb-16"></div>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <!-- Servicio 1 -->
+                <div class="bg-gray-900 p-8 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-bold text-white mb-3">Desarrollo a Medida</h3>
+                    <p class="text-gray-400">Diseño de PCBs, programación de microcontroladores (ESP32, RP2040) y sistemas embebidos.</p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="bg-gray-900 p-8 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-bold text-white mb-3">Máquinas Recreativas</h3>
+                    <p class="text-gray-400">Reparación de hardware arcade (Sega Triforce, Mario Kart GP) y monederos electrónicos.</p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="bg-gray-900 p-8 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-bold text-white mb-3">Electrónica Industrial</h3>
+                    <p class="text-gray-400">Diagnóstico y reparación a nivel de componente de placas base y fuentes de alimentación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA COMPLETA (FOTOS Y VIDEOS) -->
+    <section id="proyectos" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Nuestros Proyectos</h2>
+                <div class="w-20 h-1 bg-green-500 rounded-full"></div>
+            </div>
+
+            <!-- BLOQUE 1: LAS 4 IMÁGENES -->
+            <!-- BLOQUE 1: CARRUSEL DE IMÁGENES -->
+<!-- BLOQUE 1: CARRUSEL DE IMÁGENES CON BOTONES -->
+            <div class="flex justify-between items-end mb-6">
+                <h3 class="text-xl font-semibold text-gray-300">Galería de Imágenes</h3>
+            </div>
+            
+            <!-- Contenedor relativo para posicionar los botones -->
+            <div class="relative group">
+                
+                <!-- Botón Izquierda (Solo visible en ordenadores) -->
+                <button onclick="moverCarrusel(-1)" class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 z-10 bg-gray-800 hover:bg-green-600 text-white p-3 rounded-full shadow-lg border border-gray-600 transition-all hidden sm:block opacity-0 group-hover:opacity-100 focus:opacity-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+
+                <!-- Estilo para ocultar la barra de desplazamiento original -->
+                <style>
+                    .carrusel-sin-barra::-webkit-scrollbar { display: none; }
+                    .carrusel-sin-barra { -ms-overflow-style: none; scrollbar-width: none; }
+                </style>
+
+                <!-- Contenedor con scroll horizontal (Añadido id="carrusel-fotos") -->
+                <div id="carrusel-fotos" class="flex overflow-x-auto gap-4 pb-6 snap-x snap-mandatory scroll-smooth carrusel-sin-barra">
+                    
+                    <!-- FOTO 1 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <!-- Pon el nombre de tu foto 1 aquí -->
+                        <img src="1_imagen.jpg" alt="Proyecto 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    
+                    <!-- FOTO 2 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <img src="2_imagen.jpg" alt="Proyecto 2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <!-- FOTO 3 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <img src="3_imagen.png" alt="Proyecto 3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <!-- FOTO 4 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <img src="4_imagen.jpg" alt="Proyecto 4" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    
+                    <!-- FOTO 5 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <img src="5_imagen.jfif" alt="Proyecto 5" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <!-- FOTO 6 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <!-- Pon el nombre de tu foto 1 aquí -->
+                        <img src="6_imagen.jpg" alt="Proyecto 6" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    
+                    <!-- FOTO 7 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <img src="7_imagen.jpg" alt="Proyecto 7" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <!-- FOTO 8 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <img src="8_imagen.jpg" alt="Proyecto 8" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <!-- FOTO 9 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <img src="9_imagen.jpg" alt="Proyecto 9" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    
+                    <!-- FOTO 10 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <img src="10_imagen.jpg" alt="Proyecto 10" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <!-- FOTO 20 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <!-- Pon el nombre de tu foto 1 aquí -->
+                        <img src="20_imagen.png" alt="Proyecto 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    
+                    <!-- FOTO 21 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <img src="21_imagen.png" alt="Proyecto 2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+
+                    <!-- FOTO 22 -->
+                    <div class="flex-none w-[80%] sm:w-72 md:w-80 snap-center aspect-square rounded-xl overflow-hidden border border-gray-700 relative">
+                        <img src="22_imagen.png" alt="Proyecto 3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+
+
+
+                </div>
+
+                <!-- Botón Derecha (Solo visible en ordenadores) -->
+                <button onclick="moverCarrusel(1)" class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 z-10 bg-gray-800 hover:bg-green-600 text-white p-3 rounded-full shadow-lg border border-gray-600 transition-all hidden sm:block opacity-0 group-hover:opacity-100 focus:opacity-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+
+            <!-- Script para hacer funcionar los botones -->
+            <script>
+                function moverCarrusel(direccion) {
+                    const carrusel = document.getElementById('carrusel-fotos');
+                    // Desplaza el tamaño aproximado de una foto (320px)
+                    const desplazamiento = direccion * 320; 
+                    carrusel.scrollBy({ left: desplazamiento, behavior: 'smooth' });
+                }
+            </script>
+
+
+
+
+            <!-- BLOQUE 2: LOS 4 VIDEOS -->
+            <h3 class="text-xl font-semibold text-gray-300 mb-6">Videos de youtube</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- VIDEO 1 -->
+                <div class="w-full rounded-xl overflow-hidden shadow-lg aspect-video bg-gray-900 border border-gray-700">
+                    <!-- Reemplaza "TU_CODIGO_AQUI_1" por el código de tu video de YouTube -->
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/TU_CODIGO_AQUI_1" title="Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- VIDEO 2 -->
+                <div class="w-full rounded-xl overflow-hidden shadow-lg aspect-video bg-gray-900 border border-gray-700">
+                    <!-- Reemplaza "TU_CODIGO_AQUI_2" por el código de tu video de YouTube -->
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/TU_CODIGO_AQUI_2" title="Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- VIDEO 3 -->
+                <div class="w-full rounded-xl overflow-hidden shadow-lg aspect-video bg-gray-900 border border-gray-700">
+                    <!-- Reemplaza "TU_CODIGO_AQUI_3" por el código de tu video de YouTube -->
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/TU_CODIGO_AQUI_3" title="Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- VIDEO 4 -->
+                <div class="w-full rounded-xl overflow-hidden shadow-lg aspect-video bg-gray-900 border border-gray-700">
+                    <!-- Reemplaza "TU_CODIGO_AQUI_4" por el código de tu video de YouTube -->
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/TU_CODIGO_AQUI_4" title="Video 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+
+<!-- BLOQUE 2: LOS 4 VIDEOS (DESDE FACEBOOK) -->
+            <h3 class="text-xl font-semibold text-gray-300 mb-6">Videos de facebook</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- VIDEO FACEBOOK 1 (REEL VERTICAL) -->
+                <div class="w-full max-w-sm mx-auto rounded-xl overflow-hidden shadow-lg aspect-[9/16] bg-gray-900 border border-gray-700">
+                    <iframe class="w-full h-full"
+                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1215802292537224&show_text=false" 
+                        style="border:none;overflow:hidden" 
+                        scrolling="no" 
+                        frameborder="0" 
+                        allowfullscreen="true" 
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+                </div>
+
+                <!-- VIDEO FACEBOOK 2 -->
+               <div class="w-full max-w-sm mx-auto rounded-xl overflow-hidden shadow-lg aspect-[9/16] bg-gray-900 border border-gray-700">
+                    <iframe class="w-full h-full"
+                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1596085558925136&show_text=false" 
+                        style="border:none;overflow:hidden" 
+                        scrolling="no" 
+                        frameborder="0" 
+                        allowfullscreen="true" 
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+                </div>
+
+                <!-- VIDEO FACEBOOK 3 -->
+                <!-- VIDEO FACEBOOK 3 (HORIZONTAL) -->
+                <div class="w-full rounded-xl overflow-hidden shadow-lg aspect-video bg-gray-900 border border-gray-700">
+                    <iframe class="w-full h-full"
+                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1080428221056385&show_text=false" 
+                        style="border:none;overflow:hidden" 
+                        scrolling="no" 
+                        frameborder="0" 
+                        allowfullscreen="true" 
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+                </div>
+
+                <!-- VIDEO FACEBOOK 4 -->
+               <div class="w-full max-w-sm mx-auto rounded-xl overflow-hidden shadow-lg aspect-[9/16] bg-gray-900 border border-gray-700">
+                    <iframe class="w-full h-full"
+                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F387745897609214&show_text=false" 
+                        style="border:none;overflow:hidden" 
+                        scrolling="no" 
+                        frameborder="0" 
+                        allowfullscreen="true" 
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="py-20 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">¿Tienes un proyecto en mente o una placa averiada?</h2>
+            <p class="text-gray-400 mb-10">Escríbenos para evaluar tu caso sin compromiso. Respondemos rápido por WhatsApp o Facebook.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <!-- Botón WhatsApp -->
+                <a href="https://wa.me/34673016862?text=Hola,%20vengo%20de%20la%20página%20web%20y%20tengo%20una%20consulta" target="_blank" class="inline-flex items-center justify-center bg-[#25D366] hover:bg-green-500 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-green-900/20 text-lg w-full sm:w-auto">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.181-2.592-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.423-.101.827z"/></svg>
+                    Contactar por WhatsApp
+                </a>
+
+                <!-- Botón Facebook -->
+                <a href="https://www.facebook.com/proyectoselectronicostenerife" target="_blank" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-blue-900/20 text-lg w-full sm:w-auto">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    Contactar por Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="font-bold text-xl tracking-tighter mb-4 text-white">
+                <span class="text-green-500">&lt;/&gt;</span> Proyectos Electrónicos <span class="text-green-500">Tenerife</span>
+            </div>
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 Proyectos Electrónicos Tenerife. Santa Cruz de Tenerife, España. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ============================================== -->
+    <!-- AQUÍ VA EL BOTÓN FLOTANTE DE WHATSAPP          -->
+    <!-- ============================================== -->
+    <a href="https://wa.me/34673016862?text=Hola,%20vengo%20de%20la%20página%20web%20y%20tengo%20una%20consulta" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center border-2 border-gray-900">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.181-2.592-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.423-.101.827z"/></svg>
+    </a>
+
+</body>
+</html>
