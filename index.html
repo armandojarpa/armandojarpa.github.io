@@ -28,19 +28,31 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-18565333077');
-    
-      // Disparar conversión únicamente al pulsar enlaces de WhatsApp
+
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.open(url, '_blank');
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18565333077/zWZUCJ-a9LOdENWA0pRF',
+          'transport_type': 'beacon',
+          'event_callback': callback
+        });
+        return false;
+      }
+
       document.addEventListener('DOMContentLoaded', function () {
         const whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]');
         whatsappLinks.forEach(function (link) {
-          link.addEventListener('click', function () {
-            gtag('event', 'conversion', {
-              'send_to': 'AW-18565333077/zWZUCJ-a9LOdENWA0pRF'
-            });
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            gtag_report_conversion(link.href);
           });
         });
       });
-    </script>    
+    </script>  
 
 
     
